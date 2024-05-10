@@ -1,4 +1,3 @@
-# EX N0-2
 # Image_Acqusition-_using_Web_Camera
 ## Aim
  
@@ -26,25 +25,27 @@ Use cv2.imwrite to save the image
 Use cv2.imshow to show the video
 
 ### Step 5:
-End the program and close the output video window by pressing 'q'
+End the program and close the output video window by pressing 'q'.
 
 ## Program:
-``` Python
-### Developed By:A.Anbuselvam
-### Register No:212222240009
-```
+
+### Developed By: SAFEEQ FAZIL A
+### Register No: 212222240086
+
 ## i) Write the frame as JPG file
 ```
 import cv2
-viedoCaptureObject=cv2.VideoCapture(0)
+videoCaptureObject=cv2.VideoCapture(0)
 while(True):
-    ret,frame=viedoCaptureObject.read()
-    cv2.imwrite("anbu.jpg",frame)
+    ret,frame=videoCaptureObject.read()
+    cv2.imwrite("safeeq.jpg",frame)
     result=False
-viedoCaptureObject.release()
+videoCaptureObject.release()
 cv2.destroyAllWindows()
 
 ```
+
+
 
 ## ii) Display the video
 ```
@@ -53,11 +54,13 @@ import cv2
 cap=cv2.VideoCapture(0)
 while True:
     ret,frame=cap.read()
-    cv2.imshow('lion',frame)
+    cv2.imshow('image',frame)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows()
+
+
 ```
 
 
@@ -77,17 +80,20 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=smaller_frame
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222240009_anbu',image)
+    cv2.imshow('212222240086_safeeq',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows()
+
+
 ```
 
 
 
 
 ## iv) Rotate and display the video
+
 ```
 import numpy as np
 import cv2
@@ -102,43 +108,39 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222240009_anbu',image)
+    cv2.imshow('212222240086_safeeq',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows()
+
+
+
+
+
+
+
+
 ```
+
 ## Output
 
 ### i) Write the frame as JPG image
+![Screenshot 2024-02-29 192944](https://github.com/Safeeq-Fazil/Image_Acqusition-_using_Web_Camera/assets/118680361/c8b0286b-c534-4257-969a-5eecda36c129)
 
-![image](https://github.com/anbuselvamA/Image_Acqusition-_using_Web_Camera/assets/119559871/8e02491f-09c9-46fa-b754-4d54d702e18d)
-
-</br>
 
 
 ### ii) Display the video
-
-![image](https://github.com/anbuselvamA/Image_Acqusition-_using_Web_Camera/assets/119559871/2e938c7b-51cb-41a2-9c79-9b794f194702)
-
-</br>
+![Screenshot 2024-02-29 193043](https://github.com/Safeeq-Fazil/Image_Acqusition-_using_Web_Camera/assets/118680361/d5f3c4c5-00e0-4308-afe1-7757d822bacc)
 
 
 ### iii) Display the video by resizing the window
-
-![image](https://github.com/anbuselvamA/Image_Acqusition-_using_Web_Camera/assets/119559871/9f6541a9-60ea-457e-8eda-b53667c63aa2)
-
-</br>
+![Screenshot 2024-02-29 193111](https://github.com/Safeeq-Fazil/Image_Acqusition-_using_Web_Camera/assets/118680361/5342e510-6666-4779-8086-885e74cc124e)
 
 
 
 ### iv) Rotate and display the video
-
-![image](https://github.com/anbuselvamA/Image_Acqusition-_using_Web_Camera/assets/119559871/90ca6df7-7241-46d6-898d-66a3fcb6dedd)
-
-</br>
-
-
+![image](https://github.com/Safeeq-Fazil/Image_Acqusition-_using_Web_Camera/assets/118680361/dd657881-1c67-4d17-8b5a-8e32b2094cce)
 
 
 
